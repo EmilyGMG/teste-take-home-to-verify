@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  flex-direction: column; }
+
+.content {
+  max-width: 1320px;
+  width: 91.6vw;
+  margin: 0 auto;
+  position: relative; }
+
+.wrapper-description {
+  position: relative;
+  background-color: #004875;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 4.1vw;
+  padding-right: 4.1vw; }
+  .wrapper-description h1 {
+    font-family: 'Open Sans';
+    font-size: 58px;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: -2.32px;
+    color: #FFFFFF;
+    max-width: 680px;
+    margin-bottom: 20px;
+    line-height: 62px; }
+  .wrapper-description h6 {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    line-height: 26px;
+    color: #FFFFFF;
+    max-width: 680px;
+    margin-bottom: 40px; }
+  @media screen and (max-width: 767px) {
+    .wrapper-description h1 {
+      font-size: 29px;
+      line-height: 33px; }
+    .wrapper-description h6 {
+      font-size: 16px;
+      line-height: 20px; } }
+  @media screen and (max-width: 408px) {
+    .wrapper-description {
+      margin-top: -180px; } }
+
+/*# sourceMappingURL=stylesTheme.css.map */

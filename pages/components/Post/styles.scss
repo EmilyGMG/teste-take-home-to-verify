@@ -1,0 +1,127 @@
+@import "../../../styles/theme.scss";
+
+.wrapper-posts {
+  margin-top: 80px;
+  border-bottom: 1px solid $grey-100;
+  margin-bottom: 60px;
+  padding-bottom: 70px;
+
+  p {
+    &:nth-child(1){
+      font-family: 'Open Sans';
+      color: $pink;
+      font: normal normal bold 24px/28px 'Open Sans';
+      letter-spacing: -0.96px;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (max-width: $md) {
+    margin-bottom: 40px;
+    p {
+        &:nth-child(1){
+        font: normal normal bold 18px/20px 'Open Sans';
+      }
+    }
+  }
+}
+
+.post-container {
+  columns: 2;
+  column-gap: 40px;
+
+  @media screen and (max-width: $md) {
+    columns: 1;
+  }
+}
+
+.post-card {
+  display: inline-block;
+  max-width: 640px;
+  width: 100%;
+  border-top: 1px solid $grey-100;
+  padding: 20px 0 15px 0;
+
+  .color1 {
+    background-color: $green-200 !important;
+    color: $black-700 !important;
+  }
+  
+  .color2 {
+    background-color: $blueDark !important;
+  }
+
+  .post-tag {
+    font: normal normal normal 13px/18px 'Open Sans';
+    letter-spacing: -0.52px;
+    color: $white;
+    padding: 2px 7px;
+    display: initial;
+  }
+
+  .post-title {
+    font: normal normal bold 32px/36px 'Open Sans';
+    letter-spacing: -1.28px;
+    color: $blueDark;
+    margin: 15px 0;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration-line: underline;
+      transition: 0.3s;
+    }
+  }
+
+  .post-date {
+    font: normal normal normal 16px/22px 'Open Sans';
+    letter-spacing: -0.64px;
+    color: $grey-300;
+    margin-bottom: 15px;
+  }
+
+  .post-image {
+    max-width: 100%;
+    max-height: 440px;
+    width: 44.4vw;
+    height: 30.5vw;
+    margin-bottom: 25px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media screen and (min-width: $md) and (max-width: $xxl) {
+    width: 42vw;
+    
+    .post-title {
+      font: normal normal bold 2.2vw/2.5vw 'Open Sans';
+      margin-bottom: 10px;
+    }
+    .post-date {
+      font: normal normal normal 12px/18px 'Open Sans';
+      margin-bottom: 15px;
+    }
+    .post-image {
+      max-width: 100%;
+      height: 27vw;
+    }
+  }
+
+  @media screen and (max-width: $md) {
+    .post-title {
+      font: normal normal bold 22px/26px 'Open Sans';
+      margin-bottom: 5px;
+    }
+    .post-date {
+      font: normal normal normal 12px/18px 'Open Sans';
+      margin-bottom: 15px;
+    }
+    .post-image {
+      width: 100%;
+      height: 57.2vw;
+    }
+  }
+}

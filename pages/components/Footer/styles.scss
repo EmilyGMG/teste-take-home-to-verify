@@ -1,0 +1,34 @@
+@import "../../../styles/theme.scss";
+
+.footer {
+  margin-top: 80px;
+  width: 100%;
+  background-color: $white-200;
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+    height: 119px;
+    justify-content: space-between;
+
+    .top {
+      cursor: pointer;
+      
+      .icon-scroll {
+        -webkit-transition:  0.3s;
+        width: 20px;
+        height: 28px;
+        background-image: url('../../../assets/svg/scroll.svg');
+      }
+
+      &:hover {
+        .icon-scroll {
+          -webkit-transition: 0.3s;
+          width: 20px;
+          height: 28px;
+          background-image: url('../../../assets/svg/scroll-hover.svg');
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+@import "../../../styles/theme.scss";
+
+.button-pink {
+  cursor: pointer;
+  background-color: $pink;
+  padding: 8px 24px 8px 16px;
+  border-radius: 14px;
+  border: none;
+  width: auto;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: 0.3s;
+  z-index: 5;
+
+  p {
+    color: $white;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    font-style: normal;
+    letter-spacing: -0.72px;
+  }
+  .icon-arrow-white {
+    width: 13px;
+    height: 10px;
+    background-image: url('../../../assets/svg/arrow-white.svg');
+  }
+
+  &:hover {
+    background-color: $green-200;
+    transition: 0.3s;
+  }
+
+  @media screen and (max-width: $md) {
+    p {
+      font-family: 'Open Sans';
+      font-weight: normal;
+      font-size: 18px;
+      font-style: normal;
+      letter-spacing: -0.72px;
+    }
+  }
+}
+
+.button-white {
+  cursor: pointer;
+  background-color: $white;
+  padding: 8px 24px 8px 16px;
+  border-radius: 14px;
+  border: none;
+  width: auto;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: 0.3s;
+
+  p {
+    color: $pink;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 18px;
+    font-style: normal;
+    letter-spacing: -0.72px;
+  }
+  
+  .icon-arrow-pink {
+    width: 13px;
+    height: 10px;
+    background-image: url('../../../assets/svg/arrow-pink.svg');
+  }
+
+  &:hover {
+    color: $white;
+    background-color: $green-300;
+    transition: 0.3s;
+
+    p {
+      color: $white;
+    }
+
+    .icon-arrow-pink {
+      width: 13px;
+      height: 10px;
+      background-image: url('../../../assets/svg/arrow-white.svg');
+    }
+  }
+  @media screen and (max-width: $md) {
+    p {
+      font-family: 'Open Sans';
+      font-weight: normal;
+      font-size: 18px;
+      font-style: normal;
+      letter-spacing: -0.72px;
+    }
+  }
+}
